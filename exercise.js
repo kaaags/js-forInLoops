@@ -21,6 +21,7 @@ for(var prop in prepClass){ //loop through all the properties in the object
 }
 
 
+
 /*1. Create a function that will take in an object and loop through the properties of that object.
 Console.log the keys of the object.*/
 
@@ -35,6 +36,11 @@ var donutBox = {
 	types: ["old fashion", "glazed", "chocolate", "jelly-filled", "sprinkles", "red velvet"],
 	taste: "fabulous"
 };
+
+for(var prop in donutBox){
+	console.log(prop);
+	console.log(donutBox[prop]);
+}
 
 
 
