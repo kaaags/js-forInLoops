@@ -129,4 +129,14 @@ console.log(keySize(legend));
 /*@param {Object}
 @return {Object}*/
 
+function checkProp(obj){
+	for(var prop in obj){
+		if(obj.hasOwnProperty("occupation")){
+			return "Yes, it is his occupation.";
+		}else{
+			return "No, it is not his occupation.";
+		}
+	}
+}
 
+console.log(checkProp(legend));
