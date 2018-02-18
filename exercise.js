@@ -66,19 +66,34 @@ loopProp(donutBox);
 /*@param {Object}
 @return {Object}*/
 
-function delProp(obj){
-	delete obj.taste;
+function delProp(obj, target){
+	delete obj[target];
 	return obj;
 }
 
-console.log(delProp(donutBox));
+console.log(delProp(donutBox, "taste"));
 
 /*4. Create a function that will take in an object and will return all the values of the object in an array.*/
 
 /*@param {Object}
 @return {Array}*/
 
+var coffeeShop = {
+	name: "Harbucks",
+	mascot: "camel",
+	fictional: true,
+	menu: ["coffee", "tea", "italian soda"],
+};
 
+function convToArray(obj){
+	var arr = [];
+	for(var prop in obj){
+		arr.push(obj[prop]);
+	}
+	return arr;
+}
+
+console.log(convToArray(coffeeShop));
 
 /*5. Create a function that will take in an object and will return the number of properties (key -value pairs) in the object. Use the legend object above.
 
