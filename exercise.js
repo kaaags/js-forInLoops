@@ -104,7 +104,25 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 /*@param {Object}
 @return {Number}*/
 
+var legend = {
+	firstName: "Bruce",
+	lastName: "Lee",
+	birthPlace: "San Francisco, CA",
+	occupation: "Bad Ass",
+	hobbies: ["martial arts", "fitness", "dancing", "knitting", "coding"]
+};
 
+function keySize(obj){
+	var numKeys = 0;
+	for(var key in obj){
+		if(obj.hasOwnProperty(key)){
+			numKeys++;
+		}
+	}
+	return numKeys;
+}
+
+console.log(keySize(legend));
 
 /*6. Create a function that will take in an object and check to see if the legend object has a property of 'occupation'.*/
 
