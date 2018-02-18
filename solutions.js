@@ -45,7 +45,6 @@ function getDonutsKeys(obj){
 
 getDonutsKeys(donutBox);
 
-
 /*2.  Create a function that will take in an object and loop through the properties of that object.
 Console.log the values of the object. Use the donutBox object from the previous exercise above*/
 
@@ -60,7 +59,6 @@ function getDonutValues(obj){
 }
 
 getDonutValues(donutBox);
-
 
 /*3. Create a function that will take in an object and will delete the taste property from the donutBox object above.*/
 

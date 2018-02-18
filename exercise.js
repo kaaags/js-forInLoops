@@ -37,12 +37,14 @@ var donutBox = {
 	taste: "fabulous"
 };
 
-for(var prop in donutBox){
-	console.log(prop);
-	console.log(donutBox[prop]);
+function getDonutsKeys(obj){
+	for(var prop in obj){
+		console.log(prop);
+	}
+	return obj;
 }
 
-
+getDonutsKeys(donutBox);
 
 /*2.  Create a function that will take in an object and loop through the properties of that object.
 Console.log the values of the object. Use the donutBox object from the previous exercise above*/
@@ -50,7 +52,13 @@ Console.log the values of the object. Use the donutBox object from the previous 
 /*@param {Object}
 @return {Object}*/
 
+function loopProp(obj){
+	for(var prop in obj){
+		console.log(obj[prop]);
+	}
+}
 
+loopProp(donutBox);
 
 /*3. Create a function that will take in an object and will delete the taste property from the donutBox object above.*/
 
